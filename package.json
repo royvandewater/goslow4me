@@ -1,0 +1,24 @@
+{
+  "name": "goslow4me",
+  "version": "0.0.0",
+  "description": "Service that will wait until you are ready to take it to the next level",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/royvandewater/goslow4me.git"
+  },
+  "keywords": [
+    "service",
+    "api",
+    "development"
+  ],
+  "author": "Roy van de Water",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/royvandewater/goslow4me/issues"
+  },
+  "homepage": "https://github.com/royvandewater/goslow4me"
+}
