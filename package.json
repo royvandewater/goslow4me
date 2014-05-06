@@ -2,9 +2,10 @@
   "name": "goslow4me",
   "version": "0.0.0",
   "description": "Service that will wait until you are ready to take it to the next level",
-  "main": "index.js",
+  "main": "lib/application.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "cake dev",
+    "test": "cake test"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,14 @@
   "bugs": {
     "url": "https://github.com/royvandewater/goslow4me/issues"
   },
-  "homepage": "https://github.com/royvandewater/goslow4me"
+  "homepage": "https://github.com/royvandewater/goslow4me",
+  "dependencies": {
+    "watch": "~0.10.0",
+    "underscore": "~1.6.0"
+  },
+  "devDependencies": {
+    "sinon-chai": "~2.5.0",
+    "chai": "~1.9.1",
+    "sinon": "~1.9.1"
+  }
 }
