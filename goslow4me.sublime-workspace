@@ -348,10 +348,45 @@
 	"buffers":
 	[
 		{
+			"file": "src/application.coffee",
+			"settings":
+			{
+				"buffer_size": 809,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/index.html",
+			"settings":
+			{
+				"buffer_size": 102,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "_ = require 'underscore'\n\nclass SlowController\n  show: (request, response) =>\n    _.delay =>\n      response.send {}, 204\n    , request.params.delay\n\nmodule.exports = SlowController\n",
+			"file": "src/controllers/slow_controller.coffee",
+			"file_size": 183,
+			"file_write_time": 130442222600000000,
+			"settings":
+			{
+				"buffer_size": 181,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "Cakefile",
 			"settings":
 			{
-				"buffer_size": 536,
+				"buffer_size": 641,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 908,
 				"line_ending": "Unix"
 			}
 		}
@@ -359,7 +394,7 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 67.0,
+		"height": 400.0,
 		"selected_items":
 		[
 			[
@@ -499,6 +534,18 @@
 	},
 	"file_history":
 	[
+		"/Users/roy/Projects/goslow4me/LICENSE",
+		"/Users/roy/Projects/goslow4me/package.json",
+		"/Users/roy/Projects/goslow4me/Cakefile",
+		"/Users/roy/Projects/goslow4me/.coffeelint.json",
+		"/Users/roy/Projects/goslow4me/test/controllers/slow_controller_spec.coffee",
+		"/Users/roy/Projects/goslow4me/test/delayed_response_spec.coffee",
+		"/Users/roy/Library/Application Support/Sublime Text 3/Packages/SublimeLinter/Default (OSX).sublime-keymap",
+		"/Users/roy/Library/Application Support/Sublime Text 3/Packages/Alignment/Default (OSX).sublime-keymap",
+		"/Users/roy/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/roy/Projects/goslow4me/test/test_helper.coffee",
+		"/Users/roy/Projects/goslow4me/.gitignore",
+		"/Users/roy/Projects/goslow4me/goslow4me.sublime-project",
 		"/Users/roy/Projects/ddd/Cakefile",
 		"/Users/roy/Projects/ddd/src/command.coffee",
 		"/Users/roy/Projects/ddd/bin/ddd",
@@ -614,19 +661,7 @@
 		"/Users/roy/Projects/C3PO/src/models/juddism.coffee",
 		"/Users/roy/Projects/C3PO/say.coffee",
 		"/Users/roy/Projects/C3PO/test/messages_test.coffee",
-		"/Users/roy/Projects/twitter-auth/package.json",
-		"/Users/roy/Projects/twitter-auth/Cakefile",
-		"/Users/roy/Projects/C3PO/spec/messages_spec.coffee",
-		"/private/etc/apache2/httpd.conf",
-		"/usr/local/lib/node_modules/mocha/Readme.md",
-		"/Users/roy/Projects/Sublime/C3PO.sublime-project",
-		"/Users/roy/Projects/C3PO/lib_spec/messages_spec.js",
-		"/Users/roy/Projects/C3PO/lib/messages.js",
-		"/Users/roy/Projects/C3PO/README.md",
-		"/Users/roy/Projects/C3PO/node_modules/express/lib/router/route.js",
-		"/Users/roy/Projects/C3PO/lib/index.js",
-		"/Users/roy/Projects/juddisms/CNAME",
-		"/Users/roy/Projects/juddisms/style.css"
+		"/Users/roy/Projects/twitter-auth/package.json"
 	],
 	"find":
 	{
@@ -646,6 +681,14 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"_",
+			"h4",
+			"morgan",
+			"express",
+			"unnecessary",
+			"=",
+			"async",
+			"require",
 			"false",
 			"n_of_a_kind",
 			"citrine",
@@ -765,15 +808,7 @@
 			",",
 			"shadow",
 			"bootstrap",
-			"isms",
-			"messages",
-			"request",
-			"send_random_juddism",
-			"random_juddism",
-			"request",
-			"Bot",
-			"bot",
-			"random_juddism"
+			"isms"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -790,7 +825,7 @@
 			":\\1 => ",
 			":\\1 =>"
 		],
-		"reverse": false,
+		"reverse": true,
 		"show_context": true,
 		"use_buffer2": true,
 		"whole_word": false,
@@ -799,24 +834,108 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Cakefile",
+					"file": "src/application.coffee",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 536,
+						"buffer_size": 809,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								470,
+								470
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 34.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "public/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 102,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								64,
+								64
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/controllers/slow_controller.coffee",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 181,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								114,
+								114
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Cakefile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 641,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								563,
+								563
 							]
 						],
 						"settings":
@@ -831,13 +950,43 @@
 					},
 					"stack_index": 0,
 					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 908,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								674,
+								674
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 544.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
 				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 42.0
+		"height": 54.0
 	},
 	"input":
 	{
@@ -890,8 +1039,48 @@
 		"selected_items":
 		[
 			[
+				"packa",
+				"package.json"
+			],
+			[
+				"ind",
+				"public/index.html"
+			],
+			[
 				"cake",
 				"Cakefile"
+			],
+			[
+				"pac",
+				"package.json"
+			],
+			[
+				"coffe",
+				".coffeelint.json"
+			],
+			[
+				"slowconsp",
+				"test/controllers/slow_controller_spec.coffee"
+			],
+			[
+				"slow",
+				"src/controllers/slow_controller.coffee"
+			],
+			[
+				"appl",
+				"src/application.coffee"
+			],
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				"test",
+				"test/test_helper.coffee"
+			],
+			[
+				".git",
+				".gitignore"
 			],
 			[
 				"ddco",
@@ -906,16 +1095,8 @@
 				"test/ddd_test.coffee"
 			],
 			[
-				"test",
-				"test/ddd_test.coffee"
-			],
-			[
 				"tehe",
 				"test/test_helper.coffee"
-			],
-			[
-				"packa",
-				"package.json"
 			],
 			[
 				"lic",
@@ -932,10 +1113,6 @@
 			[
 				"inde",
 				"index.coffee"
-			],
-			[
-				"pack",
-				"package.json"
 			],
 			[
 				"preview",
@@ -984,10 +1161,6 @@
 			[
 				"ismeco",
 				"src/client/templates/ism.eco"
-			],
-			[
-				"ind",
-				"src/index.coffee"
 			],
 			[
 				"previewrout",
@@ -1376,30 +1549,6 @@
 			[
 				"mesrow",
 				"src/client/templates/message_row.eco"
-			],
-			[
-				"mesrowview",
-				"src/client/views/message_row_view.coffee"
-			],
-			[
-				"meslistview",
-				"src/client/views/messages_list_view.coffee"
-			],
-			[
-				"collmess",
-				"src/collections/messages.coffee"
-			],
-			[
-				"messa",
-				"src/models/message.coffee"
-			],
-			[
-				"mescon",
-				"src/controllers/messages_controller.coffee"
-			],
-			[
-				"collmes",
-				"src/client/collections/messages.coffee"
 			]
 		],
 		"width": 0.0
@@ -1410,15 +1559,23 @@
 		"selected_items":
 		[
 			[
+				"isms",
+				"~/Projects/Sublime/ismsaas.sublime-project"
+			],
+			[
 				"ism",
 				"~/Projects/Sublime/ismsaas.sublime-project"
 			],
 			[
-				"imss",
+				"c",
+				"~/Projects/Sublime/C3PO.sublime-project"
+			],
+			[
+				"ims",
 				"~/Projects/Sublime/ismsaas.sublime-project"
 			],
 			[
-				"isms",
+				"imss",
 				"~/Projects/Sublime/ismsaas.sublime-project"
 			],
 			[
@@ -1578,7 +1735,7 @@
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 190.0,
 	"status_bar_visible": true,
 	"template_settings":
