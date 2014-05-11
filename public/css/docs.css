@@ -43,7 +43,8 @@ body {
 
 /* Padding for spacing */
 .inner {
-  padding: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /*
@@ -142,13 +143,5 @@ body {
   .mastfoot,
   .cover-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
-  }
-}
-
-@media (min-width: 992px) {
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 700px;
   }
 }
