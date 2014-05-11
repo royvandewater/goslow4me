@@ -348,45 +348,26 @@
 	"buffers":
 	[
 		{
-			"file": "src/application.coffee",
-			"settings":
-			{
-				"buffer_size": 809,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "public/index.html",
 			"settings":
 			{
-				"buffer_size": 102,
+				"buffer_size": 8273,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "_ = require 'underscore'\n\nclass SlowController\n  show: (request, response) =>\n    _.delay =>\n      response.send {}, 204\n    , request.params.delay\n\nmodule.exports = SlowController\n",
-			"file": "src/controllers/slow_controller.coffee",
-			"file_size": 183,
-			"file_write_time": 130442222600000000,
+			"file": "src/application.coffee",
 			"settings":
 			{
-				"buffer_size": 181,
+				"buffer_size": 763,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Cakefile",
+			"file": "public/styles.css",
 			"settings":
 			{
-				"buffer_size": 641,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "package.json",
-			"settings":
-			{
-				"buffer_size": 908,
+				"buffer_size": 2708,
 				"line_ending": "Unix"
 			}
 		}
@@ -397,6 +378,10 @@
 		"height": 400.0,
 		"selected_items":
 		[
+			[
+				":w",
+				":w - Save"
+			],
 			[
 				"jasmc",
 				"Set Syntax: Jasmine CoffeeScript"
@@ -460,10 +445,6 @@
 			[
 				"bash",
 				"Set Syntax: Shell Script (Bash)"
-			],
-			[
-				":w",
-				":w - Save"
 			],
 			[
 				"javasc",
@@ -534,9 +515,13 @@
 	},
 	"file_history":
 	[
-		"/Users/roy/Projects/goslow4me/LICENSE",
+		"/Users/roy/Projects/goslow4me/src/controllers/slow_controller.coffee",
 		"/Users/roy/Projects/goslow4me/package.json",
 		"/Users/roy/Projects/goslow4me/Cakefile",
+		"/Users/roy/Projects/goslow4me/src/application.coffee",
+		"/Users/roy/Projects/goslow4me/public/index.html",
+		"/Users/roy/Projects/goslow4me/deploy.sh",
+		"/Users/roy/Projects/goslow4me/LICENSE",
 		"/Users/roy/Projects/goslow4me/.coffeelint.json",
 		"/Users/roy/Projects/goslow4me/test/controllers/slow_controller_spec.coffee",
 		"/Users/roy/Projects/goslow4me/test/delayed_response_spec.coffee",
@@ -657,11 +642,7 @@
 		"/Users/roy/Projects/C3PO/test/bot_test.coffee",
 		"/Users/roy/Projects/C3PO/src/models/bot.coffee",
 		"/Users/roy/Projects/C3PO/test/juddism_test.coffee",
-		"/Users/roy/Projects/C3PO/src/data/protocols.coffee",
-		"/Users/roy/Projects/C3PO/src/models/juddism.coffee",
-		"/Users/roy/Projects/C3PO/say.coffee",
-		"/Users/roy/Projects/C3PO/test/messages_test.coffee",
-		"/Users/roy/Projects/twitter-auth/package.json"
+		"/Users/roy/Projects/C3PO/src/data/protocols.coffee"
 	],
 	"find":
 	{
@@ -681,6 +662,9 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"FOREVER_COMMAND",
+			"LOG_DIR",
+			"-o 'StrictHostKeyChecking no' -i ./scripts/id_rsa",
 			"_",
 			"h4",
 			"morgan",
@@ -805,10 +789,7 @@
 			"models/message",
 			", ",
 			"compileTemplate",
-			",",
-			"shadow",
-			"bootstrap",
-			"isms"
+			","
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -834,115 +815,59 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/application.coffee",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 809,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								470,
-								470
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 34.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "public/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 102,
+						"buffer_size": 8273,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								64,
-								64
+								228,
+								228
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.x": 575.0,
+						"translation.y": -0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "src/controllers/slow_controller.coffee",
+					"buffer": 1,
+					"file": "src/application.coffee",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 181,
+						"buffer_size": 763,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								114,
-								114
+								344,
+								344
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "Cakefile",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 641,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								563,
-								563
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -952,33 +877,33 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "package.json",
+					"buffer": 2,
+					"file": "public/styles.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 908,
+						"buffer_size": 2708,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								674,
-								674
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 544.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -1039,12 +964,24 @@
 		"selected_items":
 		[
 			[
-				"packa",
-				"package.json"
+				"app",
+				"src/application.coffee"
+			],
+			[
+				"sty",
+				"public/styles.css"
 			],
 			[
 				"ind",
 				"public/index.html"
+			],
+			[
+				"deploy",
+				"deploy.sh"
+			],
+			[
+				"packa",
+				"package.json"
 			],
 			[
 				"cake",
@@ -1537,18 +1474,6 @@
 			[
 				"quoterow",
 				"src/client/templates/quote_row.eco"
-			],
-			[
-				"modqu",
-				"src/client/models/quote.coffee"
-			],
-			[
-				"meslist",
-				"src/client/templates/messages_list.eco"
-			],
-			[
-				"mesrow",
-				"src/client/templates/message_row.eco"
 			]
 		],
 		"width": 0.0

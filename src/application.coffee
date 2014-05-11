@@ -10,7 +10,7 @@ app = express()
 
 app.use morgan 'dev'
 app.use body_parser()
-app.use express.static path.join(__dirname, 'public')
+app.use express.static path.join(__dirname, '../public')
 
 # development only
 app.use errorhandler() if 'development' == app.get('env')
