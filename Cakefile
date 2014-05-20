@@ -19,9 +19,10 @@ task 'test', 'rebuild the project', (options) ->
   run_tests()
 
 task 'dev', 'watch sources and run tests', ->
-  nodemon script: 'src/application.coffee', ext: 'coffee', verbose: true
+  nodemon
+    ext: 'coffee'
+    script: 'src/application.coffee'
+    verbose: true
   watchTree 'src', run_tests
   watchTree 'test', run_tests
   run_tests()
-
-
