@@ -5,8 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.css"> -->
-  <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="/css/docs.css">
 </head>
 <body>
@@ -25,7 +24,50 @@
 
   <div class="container">
     <h1>API Documentation</h1>
+    <hr>
+
+    <h4>Show</h4>
+    <p>
+      <strong>Get a delayed response from the server for latency testing</strong>
+      Will return a response after :delay milliseconds.
+      Latency in the network connection is not accounted for, so you will receive a
+      response in :delay + latency milliseconds
+    </p>
+
+    <h4>Request</h4>
+    <pre>GET /:delay</pre>
+
+    <h4>Parameters</h4>
+    <p class="indented">
+      <strong>delay</strong>
+      <em class="text-danger">required</em>
+      <br>
+      <span class="indented">integer</span>
+    </p>
+
+    <h4>Response</h4>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        Status: 200 OK
+      </div>
+      <div class="panel-body">
+<pre>{
+  "status": "success",
+  "delay": 1000
+}</pre>
+      </div>
+    </div>
+
+    <h4>Try It</h4>
+    <p><em>Times are in milliseconds</em></p>
+    <p class="go-slow-btns">
+      <a href="/1000" class="btn btn-lg btn-primary">1000</a>
+      <a href="/2000" class="btn btn-lg btn-primary">2000</a>
+      <a href="/4000" class="btn btn-lg btn-primary">4000</a>
+    </p>
   </div>
+  <br>
+  <br>
 
   <script type="text/javascript" src="/js/jquery.js"></script>
   <script type="text/javascript" src="/js/bootstrap.js"></script>

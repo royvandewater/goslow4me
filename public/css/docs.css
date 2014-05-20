@@ -19,6 +19,16 @@ a:hover {
   border: 1px solid #fff;
 }
 
+.indented {
+  padding-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .go-slow-btns {
+    text-align: center;
+  }
+}
+
 
 /*
  * Base structure
