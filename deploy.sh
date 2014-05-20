@@ -27,7 +27,7 @@ over_ssh_do "mkdir -p $APP_DIR/releases $APP_DIR/log $APP_DIR/forever"
 echo "starting rsync"
 rsync_project
 echo "npm install"
-over_ssh_do "cd $DESTINATION_DIR && npm install"
+over_ssh_do "cd $DESTINATION_DIR && npm install --production"
 echo "linking current"
 over_ssh_do "ln -nsf $DESTINATION_DIR $CURRENT_DIR"
 echo "Restarting Service"
