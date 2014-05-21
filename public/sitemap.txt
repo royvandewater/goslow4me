@@ -1,2 +1,2 @@
 http://goslow4.me/
-http://goslow4.me/docs.html
+http://goslow4.me/api-documentation.html
