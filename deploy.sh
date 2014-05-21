@@ -1,4 +1,5 @@
 #!/bin/bash
+start=`date +%s`
 
 HOST="deploy@goslow4.me"
 APP_DIR=/home/deploy/apps/goslow4me
@@ -41,4 +42,7 @@ over_ssh_do "forever restart \
   -c coffee $CURRENT_DIR/src/application.coffee"
 
 
-echo "Deployed."
+end=`date +%s`
+runtime=$((end-start))
+echo "Deployed in ${runtime} seconds"
+
