@@ -19,6 +19,15 @@ a:hover {
   border: 1px solid #fff;
 }
 
+.indented {
+  padding-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .go-slow-btns {
+    text-align: center;
+  }
+}
 
 /*
  * Base structure
@@ -27,9 +36,14 @@ a:hover {
 html,
 body {
   height: 100%;
+}
+
+html.landing {
   background-color: #333;
 }
-body {
+
+.landing body {
+  background-color: #333;
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
@@ -61,6 +75,18 @@ body {
 /*
  * Header
  */
+.masthead-container {
+  background-color: #333;
+  color: #fff;
+  height: 150px;
+  text-align: center;
+}
+
+.masthead {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .masthead-brand {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -136,6 +162,9 @@ body {
 
 @media (min-width: 768px) {
   /* Pull out the header and footer */
+  .masthead-container {
+    height: 100px;
+  }
   .masthead {
     position: fixed;
     top: 0;
