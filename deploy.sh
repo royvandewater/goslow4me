@@ -31,8 +31,8 @@ echo "npm install"
 over_ssh_do "cd $DESTINATION_DIR && npm install --production"
 echo "gzipping assets"
 over_ssh_do "cd $DESTINATION_DIR/public && \
-  for f in $(find .); do \
-    gzip -9 -c $f > $f.gz; \
+  for f in \$(find .); do \
+    gzip -9 -c \$f > \$f.gz; \
   done"
 echo "linking current"
 over_ssh_do "ln -nsf $DESTINATION_DIR $CURRENT_DIR"
