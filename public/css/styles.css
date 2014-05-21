@@ -166,12 +166,14 @@ html.landing {
     height: 100px;
   }
   .masthead {
-    position: fixed;
     top: 0;
   }
   .mastfoot {
-    position: fixed;
     bottom: 0;
+  }
+  .landing .masthead,
+  .landing .mastfoot {
+    position: fixed;
   }
   /* Start the vertical centering */
   .site-wrapper-inner {
