@@ -1,8 +1,6 @@
 {spawn}     = require 'child_process'
 {watchTree} = require 'watch'
-nodemon     = require 'nodemon'
 _           = require 'underscore'
-
 
 TEST_ARGS = [
   "--compilers", "coffee:coffee-script/register"
@@ -19,6 +17,7 @@ task 'test', 'rebuild the project', (options) ->
   run_tests()
 
 task 'dev', 'watch sources and run tests', ->
+  nodemon     = require 'nodemon'
   nodemon
     ext: 'coffee'
     script: 'src/application.coffee'
