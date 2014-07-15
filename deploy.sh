@@ -43,9 +43,6 @@ over_ssh_do "git clone --depth=1 $REPO $DESTINATION_DIR"
 echo "npm install"
 over_ssh_do "cd $DESTINATION_DIR && npm install --production"
 
-echo "compiling remotely"
-over_ssh_do "cd $DESTINATION_DIR && $NPM_BIN/cake build"
-
 echo "gzipping assets"
 over_ssh_do "cd $DESTINATION_DIR/public && \
   for f in \$(find . -type f); do \
