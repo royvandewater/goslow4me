@@ -17,6 +17,7 @@ app.use errorhandler() if 'development' == app.get('env')
 
 slow_controller = new SlowController
 app.get '/:delay', slow_controller.show
+app.post '/:delay', slow_controller.show
 app.get '/', (request, response) ->
   response.sendfile path.join(__dirname, '../public/index.html')
 

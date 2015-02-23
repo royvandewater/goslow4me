@@ -4,8 +4,8 @@
   "description": "Service that will wait until you are ready to take it to the next level",
   "main": "lib/application.js",
   "scripts": {
-    "start": "cake dev",
-    "test": "cake test"
+    "start": "gulp watch",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -23,18 +23,21 @@
   },
   "homepage": "https://github.com/royvandewater/goslow4me",
   "dependencies": {
-    "watch": "~0.10.0",
-    "underscore": "~1.6.0",
-    "express": "~4.1.2",
-    "morgan": "~1.0.1",
     "body-parser": "~1.0.2",
+    "coffee-script": "^1.9.1",
     "errorhandler": "~1.0.1",
-    "forever": "~0.11.1"
+    "express": "~4.1.2",
+    "forever": "~0.11.1",
+    "gulp": "^3.8.11",
+    "gulp-develop-server": "^0.2.5",
+    "morgan": "~1.0.1",
+    "underscore": "~1.6.0",
+    "watch": "~0.10.0"
   },
   "devDependencies": {
-    "sinon-chai": "~2.5.0",
-    "nodemon": "~1.0.17",
     "chai": "~1.9.1",
-    "sinon": "~1.9.1"
+    "mocha": "^2.1.0",
+    "sinon": "~1.9.1",
+    "sinon-chai": "~2.5.0"
   }
 }
