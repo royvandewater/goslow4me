@@ -21,5 +21,6 @@ app.post '/:delay', slow_controller.show
 app.get '/', (request, response) ->
   response.sendfile path.join(__dirname, '../public/index.html')
 
-server = app.listen 3001, ->
+port = process.env.PORT ? 3001
+server = app.listen port, ->
   console.log "Express server listening on port #{server.address().port}"
