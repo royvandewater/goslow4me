@@ -2,7 +2,7 @@
 start=`date +%s`
 
 HOST="deploy@goslow4.me"
-REPO="git@github.com:royvandewater/goslow4me"
+REPO="https://github.com/royvandewater/goslow4me"
 APP_DIR=/home/deploy/apps/goslow4me
 LOG_DIR=$APP_DIR/log
 CURRENT_DIR=$APP_DIR/current

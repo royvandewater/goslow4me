@@ -5,7 +5,7 @@ class SlowController
     delay = parseInt request.params.delay
 
     _.delay =>
-      response.send status: 'success', delay: delay
+      response.send status: 'success', delay: delay, params: request.params, body: request.body, query: request.query
     , delay
 
 module.exports = SlowController
